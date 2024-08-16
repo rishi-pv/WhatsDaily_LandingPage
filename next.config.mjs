@@ -31,4 +31,11 @@ const nextConfig = {
   // ...other config
 };
 
-export default nextConfig;
+// Use ES module syntax for export
+export default {
+  ...nextConfig,
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+};
