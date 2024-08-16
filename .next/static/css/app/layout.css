@@ -869,6 +869,9 @@ video {
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.bg-\[linear-gradient\(to_right\2c \#DD7DDF\2c \#E1CD86\2c \#BBCB92\2c \#71C2EF\2c \#3BFFFF\2c \#DD7DDF\2c \#E1CD86\2c \#BBCB92\2c \#71C2EF\2c \#3BFFFF\)\] {
+  background-image: linear-gradient(to right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF);
+}
 .from-\[\#FFFFFF\] {
   --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
@@ -1021,6 +1024,15 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.\[background-size\:200\%\] {
+  background-size: 200%;
+}
+.\[backgroung-color\:200\%\] {
+  backgroung-color: 200%;
+}
+.\[backgroung-size\:200\%\] {
+  backgroung-size: 200%;
 }
 
 

@@ -47,8 +47,9 @@
 //     ],
 //   },
 // ];
+'use client';
 import CheckMark from '@/assets/check.svg'
-
+import { motion } from 'framer-motion';
 
 
 
@@ -89,7 +90,19 @@ export const Pricing = () => {
               </li>
             </ul>
             <div className='inline-flex text-sm px-4 py-1.5 rounded-xl bg-emerald-950'>
-            <span className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text font-medium'>Coming soon</span>
+              <motion.span 
+              animate={{
+                backgroundPositionX:"-100%",
+              }}
+              transition={{
+                repeat:Infinity,
+                repeatType:'loop',
+                duration:3,
+                ease:'linear'
+              }}
+              className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium'>
+                Coming soon
+              </motion.span>
             </div>
             <button className="btn btn-primary w-full mt-[30px]">Join for free</button>
           </div>
