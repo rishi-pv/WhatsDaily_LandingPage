@@ -58,37 +58,40 @@ export const Pricing = () => {
       <div className="container">
         <h2 className="section-title">Pricing</h2>
         <p className="section-description mt-5">One All-Inclusive Subscription, No Tiers — First Month Free for a Limited Time!</p>
-        <div>
-          <div className="p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA]">
-            <h3 className='text-lg font-bold text-[#022c22]/50'>WhatsDaily Subscription</h3>
+        <div className='py-8'>
+          <div className="p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] bg-[radial-gradient(ellipse_200%_100%_at_bottom_right,#022c22,#d1fae5_70%)]">
+            <h3 className='text-lg font-bold text-[#022c22]/70'>WhatsDaily Subscription</h3>
             <p className='section-description'>One Plan, All Features, No Hassle</p>
-            <div>
+            <div className='flex items-baseline gap-1 mt-[30px]'>
               <span className='text-4xl font-bold tracking-tighter leading-none'>
                 ₹30
               </span>
-              <span>
+              <span className='tracking-tight font-bold'>
                 /month
               </span>
             </div>
-            <ul>
-              <li>
+            <ul className='flex flex-col my-8 gap-5'>
+              <li className='items-center flex gap-4'>
                 <CheckMark className='h-6 w-6' />
                 <span>Daily curated news directly on WhatsApp</span>
               </li>
-              <li>
+              <li className='items-center flex gap-4'>
                 <CheckMark className='h-6 w-6' />
                 <span>Stay Informed with minimal effort</span>
               </li>
-              <li>
+              <li className='items-center flex gap-4'>
                 <CheckMark className='h-6 w-6' />
                 <span>Special Updates and alerts included</span>
               </li>
-              <li>
+              <li className='items-center flex gap-4'>
                 <CheckMark className='h-6 w-6' />
                 <span>No ads, just pure content</span>
               </li>
             </ul>
-            <button className="btn btn-primary">Join for free</button>
+            <div className='inline-flex text-sm px-4 py-1.5 rounded-xl bg-emerald-950'>
+            <span className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text font-medium'>Coming soon</span>
+            </div>
+            <button className="btn btn-primary w-full mt-[30px]">Join for free</button>
           </div>
         </div>
       </div>
