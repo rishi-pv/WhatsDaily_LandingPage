@@ -51,7 +51,7 @@ whatsdaily-landing-page/
 
 Ensure you have the following installed:
 - **Node.js** (v14.x or later)
-- **NPM** (v6.x or later) or **Yarn** (v1.x or later)
+- **pnpm** (v7.x or later)
 
 ### Installation
 
@@ -65,15 +65,11 @@ Ensure you have the following installed:
    ```
 3. **Install dependencies:**
    ```bash
-   npm install
-   # or
-   yarn install
+   pnpm install
    ```
 4. **Run the development server:**
    ```bash
-   npm run dev
-   # or
-   yarn dev
+   pnpm dev
    ```
 5. **Open your browser and navigate to:**
    ```
@@ -85,9 +81,7 @@ Ensure you have the following installed:
 To create an optimized production build, run:
 
 ```bash
-npm run build
-# or
-yarn build
+pnpm build
 ```
 
 This will generate the production-ready files in the `.next/` directory.
@@ -100,7 +94,7 @@ This project is ready to be deployed to services like Vercel, Netlify, or any ot
 
 1. **Install Vercel CLI:**
    ```bash
-   npm i -g vercel
+   pnpm i -g vercel
    ```
 2. **Run the deployment command:**
    ```bash
