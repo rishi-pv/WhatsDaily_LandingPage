@@ -48,7 +48,8 @@
 //   },
 // ];
 'use client';
-import CheckMark from '@/assets/check.svg'
+import CheckMark from '@/assets/check.svg';
+import CircleMark from '@/assets/circle.svg';
 import { motion } from 'framer-motion';
 
 
@@ -71,38 +72,58 @@ export const Pricing = () => {
                 /month
               </span>
             </div>
-            <ul className='flex flex-col my-8 gap-5'>
-              <li className='items-center flex gap-4'>
-                <CheckMark className='h-6 w-6' />
-                <span>Daily curated news directly on WhatsApp</span>
-              </li>
-              <li className='items-center flex gap-4'>
-                <CheckMark className='h-6 w-6' />
-                <span>Stay Informed with minimal effort</span>
-              </li>
-              <li className='items-center flex gap-4'>
-                <CheckMark className='h-6 w-6' />
-                <span>Special Updates and alerts included</span>
-              </li>
-              <li className='items-center flex gap-4'>
-                <CheckMark className='h-6 w-6' />
-                <span>No ads, just pure content</span>
-              </li>
-            </ul>
-            <div className='inline-flex text-sm px-4 py-1.5 rounded-xl bg-emerald-950'>
-              <motion.span 
-              animate={{
-                backgroundPositionX:"-100%",
-              }}
-              transition={{
-                repeat:Infinity,
-                repeatType:'loop',
-                duration:3,
-                ease:'linear'
-              }}
-              className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium'>
-                Coming soon
-              </motion.span>
+            <div className='flex flex-col md:flex-row justify-between'>
+              <ul className='flex flex-col my-8 gap-5'>
+                <li className='items-center flex gap-4'>
+                  <CheckMark className='h-6 w-6' />
+                  <span>Daily curated and insights news directly on WhatsApp</span>
+                </li>
+                <li className='items-center flex gap-4'>
+                  <CheckMark className='h-6 w-6' />
+                  <span>Stay Informed with minimal effort</span>
+                </li>
+                <li className='items-center flex gap-4'>
+                  <CheckMark className='h-6 w-6' />
+                  <span>Special Updates and alerts included</span>
+                </li>
+                <li className='items-center flex gap-4'>
+                  <CheckMark className='h-6 w-6' />
+                  <span>No ads, just pure content</span>
+                </li>
+              </ul>
+              <div className=' text-sm px-4 py-1.5 rounded-xl border border-white/60 bg-emerald-950/60'>
+                <motion.span
+                  animate={{
+                    backgroundPositionX: "-100%",
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: 'loop',
+                    duration: 3,
+                    ease: 'linear'
+                  }}
+                  className='bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium'>
+                  Coming soon
+                </motion.span>
+                <ul className='flex flex-col my-8 gap-5'>
+                  <li className='items-center flex gap-4'>
+                    <CircleMark className='h-6 w-6' />
+                    <span>Personalized Content</span>
+                  </li>
+                  <li className='items-center flex gap-4'>
+                    <CircleMark className='h-6 w-6' />
+                    <span>Regional News</span>
+                  </li>
+                  <li className='items-center flex gap-4'>
+                    <CircleMark className='h-6 w-6' />
+                    <span>Multimedia Content</span>
+                  </li>
+                  <li className='items-center flex gap-4'>
+                    <CircleMark className='h-6 w-6' />
+                    <span>Community Discussions</span>
+                  </li>
+                </ul>
+              </div>
             </div>
             <button className="btn btn-primary w-full mt-[30px]">Join for free</button>
           </div>
