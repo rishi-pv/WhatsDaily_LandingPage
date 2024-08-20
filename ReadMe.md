@@ -3,7 +3,7 @@
 Welcome to the repository for **WhatsDaily**, the sleek and modern landing page for the WhatsApp newsletter that delivers premium news directly to your inbox. This project is built using **Next.js** and **Tailwind CSS**.
 
 ## 🚀 Live Demo
-[Insert link to the live demo here]
+https://whatsdaily.vercel.app/
 
 ## 📄 Project Overview
 
